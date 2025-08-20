@@ -1,0 +1,33 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "jhipsterSampleMongodb",
+    "buildTool": "maven",
+    "cacheProvider": "ehcache",
+    "clientFramework": "angular",
+    "clientTestFrameworks": [],
+    "clientTheme": "none",
+    "creationTimestamp": 1755680233715,
+    "databaseType": "mongodb",
+    "devDatabaseType": null,
+    "enableHibernateCache": null,
+    "enableTranslation": true,
+    "entities": [],
+    "feignClient": null,
+    "jhipsterVersion": "8.11.0",
+    "jwtSecretKey": "OGRhMzE3Y2Q0NjcwMTkzNDI5OTdhMzRkNzZkYzZkMzk1ZDMyOTA0M2FjYWUyYmNiNWNmNzhjOTM2ZmZiMDUxYmYzODYyZWE0MTdmYWRkOTAxYTRjNjkyZmRhYjY4ZDcwNTMwZDcxMzBhNGIwMDhhODQ0ZTNkODhhNTBhMDEwODc=",
+    "languages": ["en"],
+    "microfrontend": null,
+    "microfrontends": [],
+    "nativeLanguage": "en",
+    "packageName": "com.mycompany.myapp",
+    "prodDatabaseType": null,
+    "reactive": false,
+    "serverPort": null,
+    "serviceDiscoveryType": null,
+    "syncUserWithIdp": null,
+    "testFrameworks": [],
+    "withAdminUi": true
+  }
+}
