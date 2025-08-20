@@ -1,0 +1,50 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (foo(); as fooRef) {
+      <div>
+        <h2 data-cy="fooDetailsHeading"><span jhiTranslate="jhipsterSampleMongodbApp.foo.detail.title">Foo</span></h2>
+
+        <hr />
+
+        <jhi-alert-error />
+
+        <jhi-alert />
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ fooRef.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="jhipsterSampleMongodbApp.foo.name">Name</span></dt>
+          <dd>
+            <span>{{ fooRef.name }}</span>
+          </dd>
+          <dt><span jhiTranslate="jhipsterSampleMongodbApp.foo.description">Description</span></dt>
+          <dd>
+            <span>{{ fooRef.description }}</span>
+          </dd>
+          <dt><span jhiTranslate="jhipsterSampleMongodbApp.foo.start">Start</span></dt>
+          <dd>
+            <span>{{ fooRef.start | formatMediumDatetime }}</span>
+          </dd>
+          <dt><span jhiTranslate="jhipsterSampleMongodbApp.foo.dummy">Dummy</span></dt>
+          <dd>
+            @if (foo()!.dummy) {
+              <div>
+                <a [routerLink]="['/dummy', foo()!.dummy?.id, 'view']">{{ fooRef.dummy?.id }}</a>
+              </div>
+            }
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/foo', fooRef.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

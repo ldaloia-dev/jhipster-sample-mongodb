@@ -1,0 +1,26 @@
+{
+  "jhipsterSampleMongodbApp": {
+    "dummy": {
+      "home": {
+        "title": "Dummies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Dummy",
+        "createOrEditLabel": "Create or edit a Dummy",
+        "notFound": "No Dummies found"
+      },
+      "created": "A new Dummy is created with identifier {{ param }}",
+      "updated": "A Dummy is updated with identifier {{ param }}",
+      "deleted": "A Dummy is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Dummy {{ id }}?"
+      },
+      "detail": {
+        "title": "Dummy"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "foo": "Foo"
+    }
+  }
+}
