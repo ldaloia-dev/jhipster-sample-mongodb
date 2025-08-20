@@ -78,7 +78,7 @@ public class DummyQueryService extends QueryServiceMongoDB {
                 and.add(buildStringCriteria(criteria.getDescription(), "description"));
             }
             if (criteria.getFooId() != null) {
-                and.add(buildCollectionFieldCriteria(criteria.getFooId(), "foos", "id"));
+                and.add(buildReferringEntitySpecification(criteria.getFooId(), "foos", "id"));
             }
             query = new Query(and.isEmpty() ? new Criteria() : new Criteria().andOperator(and));
             if (page != null) {

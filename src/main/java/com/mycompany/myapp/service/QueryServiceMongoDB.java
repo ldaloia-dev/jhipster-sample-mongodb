@@ -130,7 +130,7 @@ public abstract class QueryServiceMongoDB {
         return Criteria.where(field).not().regex(value);
     }
 
-    protected Criteria buildCollectionFieldCriteria(Filter<?> filter, String... path) {
+    protected Criteria buildReferringEntitySpecification(Filter<?> filter, String... path) {
         return buildCriteria(filter, String.join(".", path));
     }
 }
